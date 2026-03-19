@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouFirstHub | Pest Control for Homes, Businesses & Sites</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="logo-header">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="main-logo" alt="YouFirstHub Logo">
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-copy">
+                    <p class="eyebrow">Trusted Local Pest Control</p>
+
+                    <h1>Fast, Reliable Pest Control for Homes, Businesses & Sites</h1>
+
+                    <p class="subheadline">
+                        We connect you with trusted local pest control experts for houses, apartments,
+                        shops, building sites, warehouses, factories, and commercial properties.
+                        Get a fast quote today.
+                    </p>
+
+                    <div class="trust-points">
+                        <div>✔ Residential & Commercial Pest Control</div>
+                        <div>✔ Fast Response for Urgent Jobs</div>
+                        <div>✔ Quotes for Homes, Sites, Shops & Factories</div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h2>Get Your Free Quote</h2>
+                    <p>Tell us about your property or site and we’ll get back to you fast.</p>
+
+                    <form action="/submit" method="POST">
+
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="postcode">Postcode *</label>
+                        <input type="text" id="postcode" name="postcode" required>
+
+                        <label for="property_type">Property Type *</label>
+                        <select id="property_type" name="property_type" required>
+                            <option value="">Select property type</option>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Building Site">Building Site</option>
+                            <option value="Shop">Shop</option>
+                            <option value="Restaurant / Cafe">Restaurant / Cafe</option>
+                            <option value="Office">Office</option>
+                            <option value="Warehouse">Warehouse</option>
+                            <option value="Factory">Factory</option>
+                            <option value="Other Commercial Property">Other Commercial Property</option>
+                        </select>
+
+                        <label for="service">Service Needed *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="General Pest Control">General Pest Control</option>
+                            <option value="Cockroach Treatment">Cockroach Treatment</option>
+                            <option value="Termite Inspection">Termite Inspection</option>
+                            <option value="Spider Treatment">Spider Treatment</option>
+                            <option value="Rodent Control">Rodent Control</option>
+                            <option value="Ant Treatment">Ant Treatment</option>
+                            <option value="End of Lease Pest Control">End of Lease Pest Control</option>
+                            <option value="Commercial Pest Control">Commercial Pest Control</option>
+                            <option value="Construction Site Pest Control">Construction Site Pest Control</option>
+                        </select>
+
+                        <label for="message">Tell us more</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us about the pest issue, site, building, or business location"
+                        ></textarea>
+
+                        <button type="submit" class="submit-btn">Get My Free Quote</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+
+                <div class="steps">
+
+                    <div class="step">
+                        <span>1</span>
+                        <h3>Tell Us What You Need</h3>
+                        <p>Fill in the short form with your pest issue, location, and property type.</p>
+                    </div>
+
+                    <div class="step">
+                        <span>2</span>
+                        <h3>We Match Your Job</h3>
+                        <p>We connect your enquiry with a trusted pest control expert suited to the property or site.</p>
+                    </div>
+
+                    <div class="step">
+                        <span>3</span>
+                        <h3>Get It Sorted Fast</h3>
+                        <p>Receive a quick response for domestic, commercial, or site-based pest control work.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
