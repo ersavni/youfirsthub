@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | YouFirstHub</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17093611543"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17093611543');
+    </script>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <main style="display:flex;align-items:center;justify-content:center;height:100vh;">
-        <div style="background:white;padding:40px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;max-width:500px;">
+    <main class="container" style="text-align:center; padding: 60px 20px;">
 
-            <div style="font-size:50px;margin-bottom:10px;">✔</div>
+        <h1>Thank You!</h1>
 
-            <h1>Thanks! We’ve received your enquiry.</h1>
+        <p>Your request has been submitted successfully.</p>
 
-            <p style="margin:20px 0;">
-                A local pest control expert will contact you shortly.
-            </p>
+        <p>We’ll connect you with a trusted pest control professional shortly.</p>
 
-            <a href="/" style="display:inline-block;background:#14B8A6;color:white;padding:12px 20px;border-radius:6px;text-decoration:none;">
-                Back to Home
-            </a>
+        <p><strong>Keep your phone nearby — you may receive a call soon.</strong></p>
 
-        </div>
+        <a href="/" class="submit-btn" style="display:inline-block; margin-top:20px;">
+            Back to Home
+        </a>
+
     </main>
 
 </body>
